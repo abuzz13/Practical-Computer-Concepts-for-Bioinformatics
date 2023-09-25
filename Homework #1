@@ -1,0 +1,12 @@
+Linux Lab 1  
+Drills – just do them, nothing to turn in for these first three: 
+1. Using PuTTY on PCs, or ssh -l [your username] from a Mac's (OS X) Terminal window, connect to bfx3.aap.jhu.edu ; login with your username and password (same as you use to access JHU email and Blackboard). 
+2. Do the exercises in Learning the UNIX Operating System on page 13 (end of the 'Syntax of UNIX Command Lines' section). 
+3. When done, type exit to logout.  
+Exercises - turn in at beginning of next week's class: 
+Type cd ~jgreene2 and list all the files in this directory. Do any begin with a . ? What command did you use? 
+		Use the command ls to list all files not hidden and it looks like there are no files beginning with a “.”
+Now list all files, including hidden ones. How many hidden files are there?  What command did you use? (Compare with above results; . and .. do not count) 
+		To find hidden files I used the command ls -a -l or you can also use ls -al, there are 162 hidden files. When you search ls -l it indicates the total (17064) and ls -al also indicates a total (17226). 
+List all information about the files, in the long format. When was testy.pl last modified? What command did you use?
+		To list all information about files in the long format, I used the controls ls -l. testy.pl was last modified Feb. 19th, 2020.
