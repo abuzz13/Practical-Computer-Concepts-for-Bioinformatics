@@ -1,0 +1,58 @@
+
+410.634: Practical Computer Concepts for Bioinformatics, Johns Hopkins University, Krieger School of Arts and Sciences, Advanced Academic Programs, Biotechnology 
+Name: __Amanda Busswitz______ 
+Linux Lab 2 Drills: just do them; nothing to turn in for these first three:
+1. Login to the bfx3 server.
+2. Do the exercises in Learning the UNIX Operating System on pp. 53–54 (Ch. 3, end of the "Listing files with ls" section) and on 86 (end of Ch. 4).
+3. Also try these:
+(first do cp  ~jgreene2/users  ~yourusername {which is your home directory}) 
+head users 
+tail users 
+uname -a 
+wc users 
+history 
+!ta 
+! 3 (from history) 
+!! 
+Exercises - turn in at beginning of next week's class: 
+Change directories to the ~jgreene2/bin directory. What are the permissions on the final.blastn file? (r, w, x)  
+-rw-r—r--
+Change directories using .. to go up and then over to the class directory. Write the command you just used. What files are in this directory that begin with egr?   
+cd ../class ; 2 start with egr.
+Go down two levels to the classsub2 directory via the classsub directory using relative pathnames. Write the command you just used. What files are in this directory? 
+cd classsub/classsub2
+file100.txt
+Use more to see the contents of the ~jgreene2/.bash_profile file. What is the last command in this file? 
+Export PATH
+Make a bin subdirectory within your home directory. Change permissions to make it accessible to all three entities (user, group, others) on the system and all files executable. (Do NOT delete this directory - we will use it when we get to Python programming). Write the command you used and the resulting permissions line of your bin directory here.  
+Chmod a+rx *
+cd
+mkdir bin
+chmod 755 bin
+chmod 755 bin/*
+ls -ld ~/bin -> drwxr-xr-x or 755
+ You’ll learn more about this later, but GitHub is a place where developers can store and share their code.  Create another directory within your home area called ‘git’, then change directories on your terminal into that git directory.  Download a copy of the biocode library and scripts like this: 
+git clone https://github.com/jorvis/biocode 
+Paste the output you got from the command line into your submission. 
+gh repo clone jorvis/biocode
+Now change directories to the biocode directory created in #6. What are the permissions on the script_template.py file?  
+-rw-r—r--
+How many files within the biocode/gff directory begin with the word 'convert'?  What command did you use?  
+21, ls gff/convert*  | wc -l 
+Change directories to biocode/fasta, using an absolute path. Write the complete command you used. 
+cd /export/home/abusswi1/git/biocode-master/fasta
+From your current working directory from #9, change directories using a relative path to your home directory. Write the command you just used. 
+cd, I know this isn’t right but the relative path isn’t working for me right now.
+cd ../../../
+Change back to your home directory. Use the touch command to create a file named firstfile.txt. (touch firstfile.txt) What are the permissions on this file?  
+-rw-r—r--  or 644
+Use chmod to make this file available for just read and write to everyone on the system. What command did you type? What are the permissions now?  
+chmod 666 fistfile.txt
+ls -l firstfile.txt        -rw-rw-rw-  or 666
+Copy ~jgreene2/bin/finalfixed.blastn to your bin directory. What command did you use? (Do not delete this file - we will use it later).  
+cp ~jgreene2/bin/finalfixed.blastn /export/home/abusswi1/bin
+Change directories to ~jgreene2/public_html/labs. List only those files beginning with "UNIX" using wildcards. What command did you use? How many files meet this criteria? 
+ ls lab?; ls unix[lab1-3]; 6 files meet this criteria.
+UNIX*
+List just the files beginning with UNIXlab, a single digit, and ending in .html. What did you type, and how many files appear?
+3 files appear. UNIXlab?.html
